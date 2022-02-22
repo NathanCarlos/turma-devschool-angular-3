@@ -17,7 +17,7 @@ Para a essas primeiras aulas vamos abordar os seguintes tópicos:
 
 # O Que é Angular?
 O **Angular** é um poderoso framework que utiliza HTML e [TypeScript](https://blog.betrybe.com/desenvolvimento-web/typescript/) para criar a interface com o usuário, ou seja, o front-end em aplicações web, desktop e dispositivos móveis. A primeira versão **foi** lançada em 2010 com o nome **Angular JS**, mas foi completamente reescrita e em 2016 passou a ser chamada **Angular 2**.
-Atualmente a versão mais recente e estável do angular é a 10, porém a versão 11 já está em fase de testes.
+Atualmente a versão mais recente e estável do angular é a 12.
 
 Exemplos de aplicações desenvolvidas com Angular:
 - https://www.autocompara.com.br/
