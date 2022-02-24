@@ -170,7 +170,7 @@ Para conseguir realizar a lista de exercícios aguarde a aula para um entendimen
 
 Exercício 1) Crie um projeto utilizando o cli do angular e que utiliza o padrão SCSS para estilização.
 
-Exercício 2) No arquivo app.component.html coloque um h1 com o texto: "Hello World".
+Exercício 2) No arquivo app.component.html coloque um texto do lorem ipsum: https://www.lipsum.com/
 
 # Fontes e Referências
 
