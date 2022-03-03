@@ -72,5 +72,7 @@ Exercício 3) Crie um componente de rodapé e ajuste o seu app.component para ca
 
 Exercício 4) Crie um componente que contenha 2 parágrafos e 1 título do site https://www.lipsum.com/ e carregue ele no seu app.component também.
 
+Exercício 5) Estilize o cabeçalho e rodapé do seu site.
+
 # Fontes e Referências
 https://www.devmedia.com.br/angular-components-conhecendo-e-configurando-no-seu-projeto/40734
