@@ -63,12 +63,14 @@ Pronto! O nosso primeiro componente compartilhado, além de ter sido criado já 
 ## Lista de exercícios
 Para conseguir realizar a lista de exercícios aguarde a aula para um entendimento melhor, porém se quiser se desafiar a fazer tudo bem :)
 
-Exercício 1) Crie um componente compartilhado chamado "header" que será o menu de navegação da sua aplicação.
+Exercício 1) Crie um componente chamado "header" que será o menu de navegação da sua aplicação.
 Obs: Utilize o ng generate
 
 Exercício 2) Crie um componente do conteúdo principal da sua aplicação, o nome você pode escolher e no app.component.html ajuste para carregar seu nav e seu conteúdo principal.
 
 Exercício 3) Crie um componente de rodapé e ajuste o seu app.component para carregar nav, conteúdo principal e rodapé.
+
+Exercício 4) Crie um componente que contenha 2 parágrafos e 1 título do site https://www.lipsum.com/ e carregue ele no seu app.component também.
 
 # Fontes e Referências
 https://www.devmedia.com.br/angular-components-conhecendo-e-configurando-no-seu-projeto/40734
