@@ -1,0 +1,13 @@
+div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    app-lorem-ipsum {
+        width: 50%;
+    }
+}
+app-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
