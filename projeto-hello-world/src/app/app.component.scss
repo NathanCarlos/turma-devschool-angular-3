@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+    font-size: 24px;
+}
+p {
+    font-size: 12px;
+}
+nav {
+    width: 100%;
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+}
