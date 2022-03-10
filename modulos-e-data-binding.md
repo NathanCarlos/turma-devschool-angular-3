@@ -121,12 +121,13 @@ Exercício 6) No app.component.html utilize nessa ordem: header, listagem, foote
 Exercício 7) No app.component crei uma tag H1 e interpole um título de uma variável criada no typescript.
 
 Exercício 8) No app.component crie uma div e exiba as seguintes informações do objeto do colaborador abaixo:
-{
+>{
     id: 7,
     nome: 'Nathan Carlos Exercicio',
     salario: 4500,
     cargo: 'Dev Pl'
 }
+
 Obs: para interpolar os valores desse objeto, não esqueça de criar uma vriável no typescript e atribuir o objeto.
 
 # Fontes e Referências
