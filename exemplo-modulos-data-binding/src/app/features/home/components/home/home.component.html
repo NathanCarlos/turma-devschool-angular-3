@@ -1,0 +1,30 @@
+<div>
+    <h1 class="site-title">{{ title }}</h1>
+    {{ number }}
+
+    <p>Data de hoje: {{ dateToday }}</p>
+
+    <p>Ano atual: {{ year }}</p>
+
+    <p>Preço: R${{ price }}</p>
+
+    <div>
+        <h3>Informações do Cliente:</h3>
+        <h4>Nome: {{ client.name }}</h4>
+        <h4>Email: {{ client.email }}</h4>
+        <h4>Senha: {{ client.password }}</h4>
+    </div>
+
+    <div>
+        <h3>Informações de produtos:</h3>
+        <div class="product" *ngFor="let product of products; index as i">
+            {{i}}
+            <h4>Identificador: {{ product.id }}</h4>
+            <h4>Descrição: {{ product.description }}</h4>
+            <h4>Preço: R${{ product.price }}</h4>
+            <h4>Imagem: <img src="{{product.imageUrl}}"></h4>
+            <hr>
+        </div>
+    </div>
+    <app-lorem-ipsum></app-lorem-ipsum>
+</div>
