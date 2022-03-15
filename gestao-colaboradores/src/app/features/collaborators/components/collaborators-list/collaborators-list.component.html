@@ -1,1 +1,5 @@
-<p>collaborators-list works!</p>
+<div *ngFor="let collaborator of collaborators">
+    <h1>Nome: {{collaborator.nome}}</h1>
+    <h2>Salario R$: {{collaborator.salario}}</h2>
+    <h2>Cargo: {{collaborator.cargo}}</h2>
+</div>

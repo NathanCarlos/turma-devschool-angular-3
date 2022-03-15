@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Collaborator } from './features/collaborators/models/collaborator.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'gestao-colaboradores';
+  collaborator: Collaborator = {
+    id: 7,
+    nome: 'Nathan Carlos Exercicio',
+    salario: 4500,
+    cargo: 'Dev Pl'
+  };
+  title = 'Gestão de Colaboradores';
 }
