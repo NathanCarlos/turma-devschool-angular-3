@@ -6,8 +6,9 @@
         <h3>{{product?.price}}</h3>
         <p><b>10x sem juros de R${{product?.price}}</b></p>
         <p><b>ou R${{product?.price}} no boleto</b></p>
+        <p>Porcentagem de desconto: {{discountPercent}}</p>
     </div>
-    <div class="actions add-to-cart">
+    <div class="actions add-to-cart" (click)="addToCart()">
         Adicionar ao carrinho
     </div>
 </div>

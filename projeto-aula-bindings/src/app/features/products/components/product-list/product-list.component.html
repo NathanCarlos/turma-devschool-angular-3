@@ -1,9 +1,11 @@
 <div class="search">
     <h3>Busca de Produtos</h3>
-    <input type="text" placeholder="Digite o nome de um produto">
+    <input type="text" placeholder="Digite o nome de um produto"
+    (keyup)="filterProducts($event)">
 </div>
 <div class="products-container">
-    <!-- <app-product-card
-    *ngFor="let product of products"
-    [product]="product"></app-product-card> -->
+    <app-product-card
+    *ngFor="let item of filteredProducts"
+    [product]="item"
+    [discountPercent]="5"></app-product-card>
 </div>

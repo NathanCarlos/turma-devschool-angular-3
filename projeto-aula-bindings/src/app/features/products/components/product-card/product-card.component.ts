@@ -9,12 +9,20 @@ import { Product } from '../../models/product.model';
 export class ProductCardComponent implements OnInit {
 
   @Input()
+  discountPercent?: number;
+
+  @Input()
   product?: Product;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  addToCart() {
+    alert(`O produto ${this.product?.description} foi adicionado ao carrinho!!`);
+  }
+
 
   // addToCart() {
   //   alert(`O produto ${this.product?.description} foi adicionado ao carrinho!`);

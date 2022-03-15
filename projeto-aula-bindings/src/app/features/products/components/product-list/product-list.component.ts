@@ -10,6 +10,20 @@ export class ProductListComponent implements OnInit {
 
   title = 'Lista de Produtos';
 
+//   productItem: Product = {
+//         id: 1,
+//         description: 'Notebook S51',
+//         img: 'https://images.samsung.com/is/image/samsung/br-notebook-style-s51-np730xbe-kp1br-np730xbe-kp1br-fronttitanumsilver-185313138?$720_576_PNG$',
+//         price: 5000
+//     };
+
+//     productItem1: Product = {
+//         id: 2,
+//         description: 'Notebook Samsung Book E30 Intel Core i3 4GB 1TB - 15,6” Full HD Windows 10',
+//         img: 'https://a-static.mlcdn.com.br/1500x1500/notebook-samsung-book-e30-intel-core-i3-4gb-1tb-156-full-hd-windows-10/magazineluiza/135258300/44bf629ad1472f3a86f5ae8b55ed0672.jpg',
+//         price: 3500
+//     };
+
   products = [
     {
         id: 1,
@@ -73,9 +87,20 @@ export class ProductListComponent implements OnInit {
     }
   ];
 
+  filteredProducts = this.products;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  filterProducts(event: any) {
+      const searchValue = event.target.value;
+      if (searchValue.length > 0) {
+          return this.filteredProducts = 
+          this.products.filter((product) => product.description.toUpperCase().search(searchValue.toUpperCase()) > -1);
+      }
+      return this.filteredProducts = this.products;
   }
 
 }
