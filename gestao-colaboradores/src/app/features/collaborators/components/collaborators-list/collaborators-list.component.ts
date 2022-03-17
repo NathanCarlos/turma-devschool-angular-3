@@ -8,13 +8,6 @@ import { Collaborator } from '../../models/collaborator.model';
 })
 export class CollaboratorsListComponent implements OnInit {
 
-  // collaborator: Collaborator = {
-  //   id: 1,
-  //   nome: 'Nathan',
-  //   cargo: 'Dev Sr',
-  //   salario: 3500
-  // };
-
   collaborators: Array<Collaborator> = [
     { 
       id: 1,
@@ -53,7 +46,7 @@ export class CollaboratorsListComponent implements OnInit {
       cargo: 'Dev Sr'
     },
     { 
-      id: 6,
+      id: 7,
       nome: 'Alan Jhonnes',
       salario: 11000,
       cargo: 'Arquiteto'

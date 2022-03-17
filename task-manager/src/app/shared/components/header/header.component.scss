@@ -1,0 +1,15 @@
+nav {
+    width: 100%;
+    background-color: grey;
+    color: white;
+    ul {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        li {
+            list-style: none;
+            cursor: pointer;
+        }
+    }
+}
