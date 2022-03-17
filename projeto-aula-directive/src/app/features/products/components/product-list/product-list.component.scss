@@ -12,3 +12,16 @@
         height: 30px;
     }
 }
+
+.product-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.color-red {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}

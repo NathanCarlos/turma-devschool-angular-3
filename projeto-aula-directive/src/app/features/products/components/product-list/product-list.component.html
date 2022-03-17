@@ -9,3 +9,9 @@
     [product]="item"
     [discountPercent]="5"></app-product-card>
 </div>
+
+<div class="product-message"
+[ngClass]="{ 'color-red': showMessageError }"
+*ngIf="showMessageError">
+    <h3>Não existe produtos para essa consulta!</h3>
+</div>
