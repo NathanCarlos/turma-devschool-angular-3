@@ -1,0 +1,27 @@
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.search {
+    padding-left: 10px;
+    input {
+        width: 300px;
+        height: 30px;
+    }
+}
+
+.product-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.color-red {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
