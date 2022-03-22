@@ -1,5 +1,11 @@
 .completed {
-    background-color: grey;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.uncompleted {
+    background-color: red;
     color: white;
     cursor: pointer;
 }

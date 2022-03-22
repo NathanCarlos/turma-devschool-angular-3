@@ -1,6 +1,6 @@
-<div class="container-task">
+<div class="container-task" [ngClass]="task?.completed ? 'completed' : 'uncompleted'">
     <h1>Id: {{task?.id}}</h1>
     <h1>Descrição: {{task?.description}}</h1>
-    <h1>Tarefa Competa? <span class="completed" (click)="updateCompleted()">
+    <h1>Tarefa Competa? <span (click)="updateCompleted()">
         {{task?.completed}}</span></h1>
 </div>
