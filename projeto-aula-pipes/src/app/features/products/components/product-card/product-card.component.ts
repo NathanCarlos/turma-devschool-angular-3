@@ -11,7 +11,7 @@ export class ProductCardComponent implements OnInit {
   @Input()
   product?: Product;
 
-  percentDiscount = 5;
+  percentDiscount = 0.10;
 
   constructor() { }
 
@@ -23,7 +23,7 @@ export class ProductCardComponent implements OnInit {
   }
 
   getPriceWithDiscount(price: number): number {
-    return price * ((100 - 5) / 100);
+    return price * (1 - this.percentDiscount);
   }
 
 }

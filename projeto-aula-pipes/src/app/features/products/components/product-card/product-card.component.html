@@ -3,8 +3,8 @@
         [src]="product.img">
     <div class="card-description">
         <p><b>{{product.description}}</b></p>
-        <h3>{{product.price}}</h3>
-        <p>Pague {{getPriceWithDiscount(product.price)}} no boleto com {{ (percentDiscount / 100)}} de desconto!</p>
+        <h3>{{product.price | currency:'BRL' }}</h3>
+        <p>Pague {{getPriceWithDiscount(product.price) | currency: 'BRL' }} no boleto com {{ percentDiscount | percent}} de desconto!</p>
         <h3 [ngClass]="{'available': product.quantity >= 3, 'not-available': product.quantity < 3}"
             >{{ product.quantity >= 3 ? 'Disponível' : 'Não Disponível' }}</h3>
     </div>

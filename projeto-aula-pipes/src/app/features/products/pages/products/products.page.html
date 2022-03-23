@@ -1,4 +1,6 @@
 <app-header></app-header>
-    <h3>Produtos disponíveis até: {{ availableDateProducts }}</h3>
+    <h3>Produtos disponíveis até: {{ availableDateProducts | date: 'fullDate' }}</h3>
+    <h1>Telefone: {{ phone | phone }}</h1>
+    <h1>Telefone 2: {{ phone2 | phone }}</h1>
     <app-product-list></app-product-list>
 <app-footer></app-footer>

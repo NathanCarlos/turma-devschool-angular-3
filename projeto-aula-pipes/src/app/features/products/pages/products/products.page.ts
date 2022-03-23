@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsPageComponent implements OnInit {
 
-  availableDateProducts: Date = new Date('2021-08-31');
+  availableDateProducts: Date = new Date();
+
+  phone = '11963723232';
+  phone2 = '11965628232';
   
   constructor() { }
 
