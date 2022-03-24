@@ -1,0 +1,10 @@
+<app-header></app-header>
+    <div *ngIf="product">
+        <h1>Detalhes do produto: {{ product.id }}</h1>
+        <h3>Descrição: {{ product.description }}</h3>
+        <h3>Preço: {{ product.price | currency: 'BRL' }}</h3>
+        <h3>Quantidade: {{ product.quantity }}</h3>
+        <h3>Link da Imagem: {{ product.img }}</h3>
+        <h3>Data de inclusão no sistema: {{ product.inclusionDate | date }}</h3>
+    </div>
+<app-footer></app-footer>

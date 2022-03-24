@@ -4,9 +4,10 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { SharedModule } from '../../shared/shared.module';
 import { ProductsPageComponent } from './pages/products/products.page';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 
 @NgModule({
-  declarations: [ProductListComponent, ProductCardComponent, ProductsPageComponent],
+  declarations: [ProductListComponent, ProductCardComponent, ProductsPageComponent, ProductDetailsComponent],
   imports: [
     CommonModule,
     SharedModule
