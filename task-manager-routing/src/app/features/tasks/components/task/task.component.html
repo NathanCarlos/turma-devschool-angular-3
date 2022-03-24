@@ -1,0 +1,7 @@
+<div class="container-task" [ngClass]="task?.completed ? 'completed' : 'uncompleted'">
+    <h1>Id: {{task?.id}}</h1>
+    <h1>Descrição: {{task?.description}}</h1>
+    <h1>Tarefa Competa? <span (click)="updateCompleted()">
+        {{task?.completed}}</span></h1>
+    <h1>Data de Inclusão: {{ task?.inclusionDate | date }}</h1>
+</div>

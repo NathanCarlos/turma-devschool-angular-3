@@ -1,0 +1,8 @@
+<input type="text" (keyup)="searchCollaborator($event)">
+<div class="container">
+    <app-task *ngFor="let item of filteredTasks" [task]="item"></app-task>
+</div>
+
+<div class="message" *ngIf="filteredTasks.length === 0">
+    <h1>Não existe tarefas para essa busca!</h1>
+</div>
