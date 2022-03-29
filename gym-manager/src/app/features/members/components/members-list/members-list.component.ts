@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Member } from '../../models/member.model';
+import { MembersService } from '../../services/members.service';
 
 @Component({
   selector: 'app-members-list',
@@ -8,40 +9,37 @@ import { Member } from '../../models/member.model';
 })
 export class MembersListComponent implements OnInit {
 
-  members: Array<Member> = [
-    {
-      id: 1,
-      name: 'Nathan',
-      montlhyPayment: 150,
-      inclusionDate: new Date(),
-      lastPaymentDate: new Date()
-    },
-    {
-      id: 2,
-      name: 'Otavio',
-      montlhyPayment: 100,
-      inclusionDate: new Date(),
-      lastPaymentDate: new Date()
-    },
-    {
-      id: 3,
-      name: 'Mauricio',
-      montlhyPayment: 150,
-      inclusionDate: new Date(),
-      lastPaymentDate: new Date()
-    },
-    {
-      id: 4,
-      name: 'Palloma',
-      montlhyPayment: 90,
-      inclusionDate: new Date(),
-      lastPaymentDate: new Date()
-    },
-  ];
+  members: Array<Member> = this.membersService.getMembers();
 
-  constructor() { }
+  filteredMembers: Array<Member> = this.members;
+
+  constructor(private membersService: MembersService) { }
 
   ngOnInit(): void {
+  }
+
+  findById(event: any) {
+    const value = event.target.value;
+
+    if(!value) return this.filteredMembers = this.members;
+
+    const member = this.membersService.getById(parseInt(value));
+
+    if(!member) return this.filteredMembers = this.members;
+
+    return this.filteredMembers = [member];
+  }
+
+  findByName(event: any) {
+    const value = event.target.value;
+
+    if(!value) return this.filteredMembers = this.members;
+
+    const members = this.membersService.getByName(value);
+
+    if(members.length === 0) return this.filteredMembers = this.members;
+    
+    return this.filteredMembers = members;
   }
 
 }

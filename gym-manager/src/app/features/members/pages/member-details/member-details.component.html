@@ -1,0 +1,11 @@
+<app-header></app-header>
+    <div *ngIf="member">
+        <h1>Id: {{member.id}}</h1>
+        <h1>Nome: {{member.name}}</h1>
+        <h2>Mensalidade: {{member.montlhyPayment}}</h2>
+        <h2>Data de inclusão: {{member.inclusionDate | date}}</h2>
+        <h2>Data último pagamento: {{member.lastPaymentDate | date}}</h2>
+        <hr>
+    </div>
+
+<app-footer></app-footer>

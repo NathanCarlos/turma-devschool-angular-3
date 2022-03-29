@@ -1,1 +1,6 @@
-<app-member *ngFor="let item of members" [member]="item"></app-member>
+<div class="container-inputs">
+    <input type="text" placeholder="Nome" (keyup)="findByName($event)">
+    <input type="number" placeholder="Id" (keyup)="findById($event)">
+</div>
+
+<app-member *ngFor="let item of filteredMembers" [member]="item"></app-member>
