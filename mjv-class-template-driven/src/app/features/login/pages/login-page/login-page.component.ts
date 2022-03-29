@@ -26,20 +26,13 @@ export class LoginPageComponent implements OnInit {
     if (!student) {
       this.error = true;
     } else {
+      delete student.password;
+      
       sessionStorage.setItem('student', JSON.stringify(student));
+      
       this.router.navigateByUrl('students');
     }
 
-  }
-
-  validateUser(loginForm: NgForm) {
-    // const data = loginForm.value;
-    // const student = this.studentService.getStudentByEmailAndPassword(data.email, data.password);
-    // if(!student) {
-    //   return this.error = true;
-    // }
-    // sessionStorage.setItem('student', JSON.stringify(student));
-    // return this.router.navigateByUrl('students');
   }
 
 }
