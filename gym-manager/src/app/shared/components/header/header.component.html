@@ -1,8 +1,9 @@
 <nav>
     <h3>Listagem de Produtos</h3>
     <ul>
-        <li><a (click)="navigateByUrl('/members')">Home</a></li>
-        <li><a (click)="navigateByUrl('/login')">Login</a></li>
-        <li (click)="navigateByUrl('/register')">Cadastro</li>
+        <li><a (click)="navigateByUrl('/members')" *ngIf="member">Home</a></li>
+        <li><a (click)="navigateByUrl('/login')" *ngIf="!member">Login</a></li>
+        <li (click)="navigateByUrl('/register')" *ngIf="!member">Cadastro</li>
+        <li (click)="exit()" *ngIf="member">Sair</li>
     </ul>
 </nav>

@@ -10,6 +10,8 @@ export class MembersService {
     {
       id: 1,
       name: 'Nathan',
+      email: "nathan@gmail.com",
+      password: "123456",
       montlhyPayment: 150,
       inclusionDate: new Date(),
       lastPaymentDate: new Date()
@@ -17,6 +19,8 @@ export class MembersService {
     {
       id: 2,
       name: 'Otavio',
+      email: "otavio@gmail.com",
+      password: "123456",
       montlhyPayment: 100,
       inclusionDate: new Date(),
       lastPaymentDate: new Date()
@@ -24,6 +28,8 @@ export class MembersService {
     {
       id: 3,
       name: 'Mauricio',
+      email: "mauricio@gmail.com",
+      password: "123456",
       montlhyPayment: 150,
       inclusionDate: new Date(),
       lastPaymentDate: new Date()
@@ -31,6 +37,8 @@ export class MembersService {
     {
       id: 4,
       name: 'Palloma',
+      email: "palloma@gmail.com",
+      password: "123456",
       montlhyPayment: 90,
       inclusionDate: new Date(),
       lastPaymentDate: new Date()
@@ -49,5 +57,9 @@ export class MembersService {
 
   getByName(name: string) {
     return this.members.filter((member) => member.name.toUpperCase().search(name.toUpperCase()) > -1);
+  }
+
+  authenticate(email: string, password: string) {
+    return this.members.find((member) => member.email === email && member.password === password);
   }
 }
