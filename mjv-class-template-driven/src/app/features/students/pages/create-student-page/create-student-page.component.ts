@@ -17,16 +17,18 @@ export class CreateStudentPageComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit(): void {
+    console.log(this.student);
   }
 
   onSubmit(studentForm: NgForm) {
-    // const formValue = studentForm.form.value;
-    // this.student.name = formValue.name;
-    // this.student.email = formValue.email;
-    // this.student.password = formValue.password;
-    // this.student.monthlyPayment = formValue.monthlyPayment;
-    // this.student.course = formValue.course;
-    // this.studentsService.createStudent(this.student);
+    console.log(studentForm.value);
+    const formValue = studentForm.value;
+    this.student.name = formValue.name;
+    this.student.email = formValue.email;
+    this.student.password = formValue.password;
+    this.student.monthlyPayment = formValue.monthlyPayment;
+    this.student.course = formValue.course;
+    this.studentsService.createStudent(this.student);
     alert('Aluno adicionado com sucesso!');
     this.router.navigateByUrl('/students');
   }
