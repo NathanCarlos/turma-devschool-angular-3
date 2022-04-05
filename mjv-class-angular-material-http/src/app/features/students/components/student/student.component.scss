@@ -2,7 +2,7 @@
 
 .card {
     max-width: 250px;
-    height: 350px;
+    height: 420px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -20,9 +20,20 @@
         background-color: $cor-padrao-cinza-claro-2;
         color: $cor-padrao-textos;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
         a {
+            cursor: pointer;
             text-decoration: none;
             color: $cor-padrao-sucesso;
+        }
+        .error {
+            color: $cor-aviso-perigo;
+        }
+        .update {
+            color: $cor-padrao-botao;
         }
     }
 }

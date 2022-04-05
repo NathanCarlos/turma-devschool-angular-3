@@ -8,7 +8,7 @@ import { StudentDetailsPageComponent } from './pages/student-details-page/studen
 import { RouterModule } from '@angular/router';
 import { CreateStudentPageComponent } from './pages/create-student-page/create-student-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     SharedModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ]
 })
 export class StudentsModule { }

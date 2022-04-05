@@ -38,9 +38,10 @@ export class CreateStudentPageComponent implements OnInit {
     this.student.password = formValue.password;
     this.student.monthlyPayment = formValue.monthlyPayment;
     this.student.course = formValue.course;
-    this.studentsService.createStudent(this.student);
-    alert('Aluno adicionado com sucesso!');
-    this.router.navigateByUrl('/students');
+    this.studentsService.createStudent(this.student).subscribe((result) => {
+      alert('Aluno adicionado com sucesso!');
+      this.router.navigateByUrl('/students');
+    });
   }
 
   // alteraValores() {

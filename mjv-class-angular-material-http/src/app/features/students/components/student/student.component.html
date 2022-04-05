@@ -5,6 +5,7 @@
     <p>Data entrada: {{ student.inclusionDate | date }}</p>
     <div class="actions">
         <a [routerLink]="['/student-details', student.id]">Detalhes</a>
+        <a class="update" (click)="update()">Atualizar</a>
     </div>
 </div>
 
@@ -16,4 +17,5 @@
     <p>Data do último pagamento: {{ student.lastMontlyPayment| date }}</p>
     <p>Matrícula válida? <b>{{ student.validRegistration ? 'Sim' : 'Não' }}</b></p>
     <p>Curso atual: <b>{{ student.course }}</b></p>
+    <button class="error" (click)="remove()">Remover</button>
 </div>
