@@ -1,0 +1,9 @@
+<nav>
+    <h3>MJV Class</h3>
+    <ul>
+        <li routerLink="/students" *ngIf="student">Home</li>
+        <li routerLink="/login" *ngIf="!student">Login</li>
+        <li routerLink="/create-student" *ngIf="student">Adicionar Estudante</li>
+        <li *ngIf="student" (click)="exit()">Sair</li>
+    </ul>
+</nav>
