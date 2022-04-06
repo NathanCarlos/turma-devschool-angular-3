@@ -5,6 +5,25 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CpfPipe } from './pipes/cpf.pipe';
 import { RedDirective } from './directives/red.directive';
 import { RouterModule } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import {MatTableModule} from '@angular/material/table';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
+const materialModules = [
+  MatButtonModule,
+  MatDividerModule,
+  MatCheckboxModule,
+  MatProgressSpinnerModule,
+  MatTableModule,
+  MatTabsModule,
+  MatCardModule,
+  MatProgressBarModule
+];
 
 const components = [
   HeaderComponent,
@@ -23,12 +42,14 @@ const directives = [RedDirective];
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ...materialModules
   ],
   exports: [
     ...components,
     ...pipes,
-    ...directives
+    ...directives,
+    ...materialModules
   ]
 })
 export class SharedModule { }
